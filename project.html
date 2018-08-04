@@ -1,0 +1,267 @@
+<!--
+#################################################################
+MaterializeCSS/project.html
+#################################################################
+This file is the project website we will build by following the tutorials by The Net Ninja.
+
+Initial Video: https://www.youtube.com/watch?v=xpqgG5zHFuo
+
+Current Tutorial: https://www.youtube.com/watch?v=yHAxSHEuRRI
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <!-- font awesome -->
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <!-- Compiled and minified CSS -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+       <!-- Compiled and minified JavaScript -->
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Ryan The Photo Ninja</title>
+        <style media="screen">
+            header {
+                background: url('images/tree_sky.jpg');
+                background-size: cover;
+                background-position: center;
+                min-height: 1000px;
+            }
+            /* Mobile Screen Size Rule */
+            @media screen and (max-width: 670px){
+                header {
+                    min-height: 400px;
+                }
+            }
+            .section {
+                padding-top: 4vw;
+                padding-bottom: 4vw;
+            }
+            .tabs .indicator {
+                background-color: #5a10b8
+            }
+            .tabs .tab a:focus, .tabs .tab a:focus.active {
+                background: transparent;
+            }
+            .nav-wrapper {
+                background-color: rgba(10, 10, 10, 0.5);
+            }
+        </style>
+    </head>
+    <body>
+
+        <!--- navbar -->
+        <header id="head" class="scrollspy">
+            <div class="">
+                <nav class="nav-wrapper ">
+                    <div class="container ">
+                        <a href="#head" class="brand-logo">Ryan's Photos </a>
+                        <a href="" data-target="mobile-menu" class="sidenav-trigger">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="#photos">Photos</a>
+                            </li>
+                            <li>
+                                <a href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                            <li><a href="" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a></li>
+                            <li><a href="" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a></li>
+                            <li><a href="" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a></li>
+                        </ul>
+                        <ul class="sidenav grey lighten-2" id="mobile-menu">
+                            <li>
+                                <a href="#photos">Photos</a>
+                            </li>
+                            <li>
+                                <a href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- photo /grid -->
+        <section id="photos" class="section container scrollspy">
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="images/lupin.jpg" alt="lupin" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 l6 offset-l1">
+                    <h3 class="indigo-text text-darken-4">Potraits</h3>
+                    <p>I like taking potrait photos of nature using bokeh effects.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4 push-l6 offset-l1">
+                    <img src="images/ord_dunes.jpg" alt="lupin" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 l6 pull-l5 right-align offset-l1">
+                    <h3 class="indigo-text text-darken-4">Landscapes</h3>
+                    <p>The local scenery can be hard to beat.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="images/library1.jpg" alt="lupin" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 l6">
+                    <h3 class="indigo-text text-darken-4">Structures</h3>
+                    <p> Some man made structures have very interesting shapes.</p>
+                </div>
+            </div>
+
+        </section>
+        <!-- parallax -->
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="images/pizza.jpg" alt="Gianni's PIzza" class="responsive-img">
+            </div>
+        </div>
+        <!-- services/tabs -->
+        <section class="container section scrollspy" id="services">
+            <div class="row">
+                <div class="col s12 l5">
+                    <h4 class ="indigo-text text-darken-4">Things I do...</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col s12 l6 offset-l1">
+                    <ul class="tabs">
+                        <li class="tab col s6">
+                            <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+                        </li>
+                        <li class="tab col s6">
+                            <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+                        </li>
+                    </ul>
+                    <div class="col s12" id="photography">
+                        <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ad accusantium, hic assumenda nesciunt deleniti adipisci recusandae. Nisi numquam magnam assumenda quasi, est, ex eaque aspernatur quos et, nulla aut.</p>
+                    </div>
+                    <div class="col s12" id="editing">
+                        <p class="flow-text indigo-text text-darken-4">EDITING</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero error eius, iusto amet eligendi dicta cumque? Eveniet aspernatur explicabo, vero sint, ratione, quod dolore dolorem eos iste, doloremque autem vel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- parallax -->
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="images/beach.jpg" alt="Healdsburg Square" class="responsive-img">
+            </div>
+        </div>
+        <!-- contact  form -->
+        <section class="section container scrollspy" id="contact">
+            <div class="row">
+                <div class="col s12 l5">
+                    <h3 class="indigo-text text-darken-4">Get In Touch</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quod, consequuntur ipsa. Laudantium possimus illo, eum dolore soluta accusamus. Velit quos ratione aperiam officiis adipisci omnis fugit nihil impedit molestias?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, facilis, voluptatibus. Praesentium a vero corporis minus natus excepturi tempore corrupti rem pariatur ad, eos nihil, totam ducimus accusamus provident dolore.</p>
+                </div>
+                <div class="col s12 l5 offset-l2">
+                    <form action="">
+                        <div class="input-field">
+                            <i class="material-icons prefix">email</i>
+                            <input type="email" id="email">
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">message</i>
+                            <textarea  class='materialize-textarea' id="message" ></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">date_range</i>
+                            <input type="text" id="date" class="datepicker">
+                            <label for="date">Chose the date you need me for...</label>
+                        </div>
+                        <div class="input-field">
+                            <p>Services required...</p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" name="" value="">
+                                    <span>Photography</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" name="" value="">
+                                    <span>Editing</span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="input-field center">
+                            <button class="btn">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="page-footer grey darken-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l6">
+                        <h5>About Me</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis vero, assumenda ipsam mollitia sint quod magnam repellat commodi ipsum deserunt eos obcaecati, consequatur quam, optio accusamus quasi laboriosam. Excepturi, qui!</p>
+                    </div>
+                    <div class="col s12 l4 offset-l2">
+                        <h5>Connect</h5>
+                        <ul>
+                            <li><a href="#" class="grey-text text-lighten-3">Facebook</a> </li>
+                            <li><a href="#" class="grey-text text-lighten-3">Twitter</a> </li>
+                            <li><a href="#" class="grey-text text-lighten-3">LinkedIn</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright grey darken-4">
+                <div class="container center-align">
+                    &copy; 2018 Ryan
+                </div>
+            </div>
+        </footer>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+         <script type="text/javascript">
+             $(document).ready(function() {
+                 // defining the next monday
+                 var today = new Date();
+                 today.setDate(today.getDate() + (1+7 -today.getDay()) %7);
+                 $(".sidenav").sidenav();
+                 $(".modal").modal();
+                 $('.materialboxed').materialbox();
+                 $(".parallax").parallax();
+                 $(".tabs").tabs();
+                 $(".datepicker").datepicker({
+                     // setting options
+                     disableWeekends: true,
+                     showClearBtn: true,
+                 });
+                 $(".tooltipped").tooltip();
+                 $(".scrollspy").scrollSpy();
+             });
+         </script>
+    </body>
+</html>

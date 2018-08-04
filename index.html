@@ -28,7 +28,7 @@ Working through the NetNinja tutorials on MaterializeCSS
         .row {
             margin: 40px auto;
         }
-        .col > div {
+        .col > div.shadow {
             background: lightblue;
             height: 120px;
         }
@@ -37,6 +37,10 @@ Working through the NetNinja tutorials on MaterializeCSS
             position: relative;
             top: 20px;
             right: 20px;
+        }
+        div.pad-y {
+            padding-top: 5em;
+            padding-bottom: 5em;
         }
     </style>
 </head>
@@ -67,7 +71,7 @@ Working through the NetNinja tutorials on MaterializeCSS
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">Login</a></li>
-        
+
     </ul>
     <!-- Illustrating text size -->
     <div class="container">
@@ -200,27 +204,120 @@ Working through the NetNinja tutorials on MaterializeCSS
       <h4>Depth and Shadows</h4>
       <div class="row">
         <div class="col s2">
-            <div class=""></div>
+            <div class="shadow"></div>
         </div>
         <div class="col s2">
-            <div class="z-depth-1"></div>
+            <div class="z-depth-1 shadow"></div>
         </div>
         <div class="col s2">
-            <div class="z-depth-2"></div>
+            <div class="z-depth-2 shadow"></div>
         </div>
         <div class="col s2">
-            <div class="z-depth-3"></div>
+            <div class="z-depth-3 shadow"></div>
         </div>
         <div class="col s2">
-            <div class="z-depth-4"></div>
+            <div class="z-depth-4 shadow"></div>
         </div>
         <div class="col s2">
-            <div class="z-depth-5"></div>
+            <div class="z-depth-5 shadow"></div>
         </div>
       </div>
     </div>
+    <div class="container">
+        <hr>
+        <h4>Cards</h4>
+        <div class="row">
+            <div class="col s12 l6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/lake_sunset.jpg" alt="Trees and Sky">
+                        <a href="#" class="halfway-fab btn-floating pink pulse">
+                            <i class="material-icons">
+                                favorite
+                            </i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class='card-title'>Seattle Parks</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quisquam odio iure sit in a modi quas quibusdam nesciunt consequuntur eius quaerat, adipisci fuga asperiores dolore fugit officia, hic saepe?</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">More Details</a>
+                        <a href="#">View Map</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/bixby_bridge.jpg" alt="I Like Bridges">
+                        <a href="#" class="halfway-fab btn-floating pink pulse">
+                            <i class="material-icons">
+                                favorite
+                            </i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class='card-title'>California Coast Sites</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quisquam odio iure sit in a modi quas quibusdam nesciunt consequuntur eius quaerat, adipisci fuga asperiores dolore fugit officia, hic saepe?</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">More Details</a>
+                        <a href="#">View Map</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <hr>
+        <h4>Collections</h4>
+        <ul class="collection with-header">
+            <li class="collection-header"><h4>Users</h4></li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle blue">person</i>
+                <span class="title">Ryan</span>
+                <p class="grey-text">One cool dude</p>
+                <a href="" class="secondary-content">
+                    <i class="material-icons blue-text">email</i>
+                </a>
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle green">person</i>
+                <span class="title">Yoshi</span>
+                <p class="grey-text">Funky lizard</p>
+                <a href="#" class="secondary-content">
+                    <i class="material-icons black-text">email</i>
+                </a>
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons circle red">person</i>
+                <span class="title">Crystal</span>
+                <p class="grey-text">Random person</p>
+                <a href="#" class="secondary-content"><i class="material-icons orange-text">send</i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <hr>
+        <h4>Modals</h4>
 
+        <a href="#mymodal" class="btn orange modal-trigger">Terms and Conditions</a>
+        <div class="pad-y"></div>
+        <div class="modal " id="mymodal">
+            <div class="modal-content">
+                <h4 class="blue lighten-4">Terms and Conditions</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet culpa facilis neque officia quidem rerum fuga. Quae debitis, cupiditate optio, fugit deleniti, eveniet nostrum ipsa eius tempora ex quos dignissimos?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, debitis accusamus quis! Et officia expedita unde minus mollitia excepturi maxime exercitationem, perspiciatis harum molestiae eius necessitatibus modi dicta quae, dolores?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat totam nam excepturi eius nesciunt delectus? Facere suscipit vero assumenda, qui saepe voluptatem velit explicabo doloribus rerum. Quae, mollitia, maiores. Officia.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni enim eveniet cupiditate itaque exercitationem, est! Magnam cupiditate quod accusamus veritatis fugit placeat consequuntur autem illum assumenda odio molestiae, et, sit!</p>
+                <div class="modal-footer ">
+                    <a href="" class="modal-close btn orange waves-effect waves-light">Agree and Close</a>
+                </div>
+            </div>
+        </div>
 
+    </div>
 <script
 src="https://code.jquery.com/jquery-3.3.1.min.js"
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -230,6 +327,7 @@ crossorigin="anonymous"></script>
  <script type="text/javascript">
      $(document).ready(function() {
          $(".sidenav").sidenav();
+         $(".modal").modal();
      });
  </script>
 </body>
